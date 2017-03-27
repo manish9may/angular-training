@@ -1,0 +1,30 @@
+<html ng-app = "baseApp">
+	<head>
+		<title>Angular Js Custom Directive Practice</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<script type="text/javascript" src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+	</head>
+	<body ng-controller = "baseController">
+		<div>
+			<h1>1. Directive uses its parent scope</h1>
+			 <h2 ng-click="reverseFirstName()">Hey name 'inside parent scope' is: {{firstName}}, Click me to reverse your name</h2>
+			 <div default-scope-custom-directive></div>
+		</div>
+
+		<div>
+			<h1>2. Directive gets a new scope</h1>
+			 <h2 ng-click="reverseLastName()">Hey name 'inside parent scope' is: {{lastName}}, Click me to reverse your name</h2>
+			 <div new-scope-custom-directive></div>
+		</div>
+
+		<div>
+			<h1>3. Directive gets a new isolated scope</h1>
+			 <h2 ng-click="reverseFullName()">Hey name 'inside parent scope' is: {{fullName}}, Click me to reverse your name</h2>
+			 <div isolated-scope-custom-directive ></div>
+		</div>
+
+		<script type="text/javascript" src = "app/app.js"></script>
+		<script type="text/javascript" src = "app/directives/customDirectives.js"></script>
+		<script type="text/javascript" src = "app/controllers/baseController.js"></script>
+	</body>
+</html>

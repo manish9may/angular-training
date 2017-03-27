@@ -1,0 +1,20 @@
+<html ng-app = "baseApp">
+	<head>
+		<title>{{title}}</title>
+		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<script type="text/javascript" src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+		<script type="text/javascript" src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-route.min.js"></script>
+	</head>
+	<body ng-controller = "baseController">
+		<div ng-view></div>
+		<script type="text/javascript" src = "app/app.js"></script>
+		<script type="text/javascript" src = "app/providers/configurableService.js"></script>
+		<script type="text/javascript" src = "app/services/baseService.js"></script>
+		<script type="text/javascript" src = "app/filters/userSearch.js"></script>
+		<script type="text/javascript" src = "app/directives/highlightName.js"></script>
+		<script type="text/javascript" src = "app/controllers/baseController.js"></script>
+		<script type="text/javascript" src = "app/controllers/userController.js"></script>
+		<script type="text/javascript" src = "app/controllers/loginController.js"></script>
+	</body>
+</html>

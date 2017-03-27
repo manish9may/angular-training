@@ -1,0 +1,16 @@
+<html ng-app = "baseApp">
+	<head>
+		<title>Angular Js Filters Practice</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<script type="text/javascript" src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+	</head>
+	<body ng-controller = "baseController">
+		<h1>Core Currency Filter {{12 | currency : '$' : 3}}</h1>
+		<h1>Core Date Filter {{'2015-03-19' | date : 'dd-MM-yyyy'}}</h1>
+		<h1>My Name after custom filter {{name | capitalize : 3}}</h1>
+		<h1>My New Name after custom filter {{newName}}</h1>
+		<script type="text/javascript" src = "app/app.js"></script>
+		<script type="text/javascript" src = "app/controllers/baseController.js"></script>
+		<script type="text/javascript" src = "app/filters/capitalizeFilter.js"></script>
+	</body>
+</html>
